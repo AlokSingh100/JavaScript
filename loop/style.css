@@ -8,5 +8,8 @@ li{
     border-radius: 50%;
     text-align: center;
     padding-top: 12px;
-
+    float: left;
+    margin-left: 5px;
+    margin-bottom: 5px;
+    
 }
