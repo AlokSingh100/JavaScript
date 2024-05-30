@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="container ">
+        <div class="row">
+            <div class="col-md-6 ">
+               <div> <input type="text" placeholder="Enter the name" class="m-3 form-control  " id="snames"></div>
+                <div><input type="text" placeholder="Enter the Roll No" class="m-3 form-control " id="roll"></div>
+                
+                
+                <div>
+                     <select class="form-select form-select-lg form-control " id="clas">
+                       <option>7 <sup>th</sup></option>
+                       <option>8 <sup>th</sup></option>
+                       <option>9 <sup>th</sup></option>
+                       <option>10 <sup>th</sup></option>
+                     </select>
+                    </div>
+                    <div><input type="text" placeholder="Enter the Marks of Java" class="m-3 form-control " id="javaM"></div>
+                    <div><input type="text" placeholder="Enter the Marks of C" class="m-3 form-control " id="cM"></div>
+                    <div><input type="text" placeholder="Enter the Marks of C++" class="m-3 form-control " id="cplM"></div>
+                    <div><input type="text" placeholder="Enter the Marks of Python" class="m-3 form-control " id="pythonM"></div>
+                    <div><input type="text" placeholder="Enter the Marks of PHP" class="m-3 form-control " id="phpM"></div>
+                    <div class="text-center "><button class="bg-primary shadow-lg " onclick="Submit1()">Submit</button></div>
+                </div >
+            </div>
+            <div class="col-md-6 ">
+                <h2>Name: <span id="naame"></span></h2>
+                <h2>Roll No: <span id="rno"></span></h2>
+                <h2>Class: <span id="class"></span></h2>
+                <h2>JAVA Mark <span id="java"></span></h2>
+                <h2>C Mark <span id="c"></span></h2>
+                <h2>C++ Mark <span id="cpl"></span></h2>
+                <h2>Python Mark <span id="python"></span></h2>
+                <h2>PHP Mark <span id="php"></span></h2>
+                <h1>Total Mark <span id="total1"></span></h1>
+                <h1>Percentage <span id="per"></span></h1>
+                <h1>GRADE <span id="gread"></span></h1>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
