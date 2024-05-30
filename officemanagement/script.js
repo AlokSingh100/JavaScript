@@ -7,7 +7,6 @@ function Salary(){
     let yer=document.getElementById("yer").value;
     let month=document.getElementById("month").value;
 
-    let yearctc=emSalary*12;
     let monthctc=0;
     switch(month) {
         case "January":
@@ -42,7 +41,7 @@ function Salary(){
         case "September":
             monthctc=30;
             break;
-        case "October":
+            case "October":
             monthctc=31;
             break;
         case "November":
@@ -52,7 +51,11 @@ function Salary(){
                 monthctc=31;
                 break;
             }
-            let holiday=emSalary/monthctc*emday;
+            let holiday=parseInt(emSalary/monthctc*emday);
+            let yearctc=emSalary*12;
+            let pf3=(pf/100)*emSalary;
+            let tds3=(tds/100)*emSalary;
+            let finSalary=emSalary-(pf3+tds3+holiday);
             
     
     
@@ -61,5 +64,9 @@ function Salary(){
     document.getElementById("salary").innerHTML=emSalary;
     document.getElementById("date").innerHTML=month+" "+yer;
     document.getElementById("leave").innerHTML=holiday;
+    document.getElementById("tds1").innerHTML=tds3;
+    document.getElementById("pf1").innerHTML=pf3;
+    document.getElementById("Fsalary").innerHTML=finSalary;
+    document.getElementById("dmanth").innerHTML=monthctc;
     
 }
