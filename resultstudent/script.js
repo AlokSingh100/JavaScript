@@ -32,13 +32,49 @@ function Submit1(){
     document.getElementById("naame").innerHTML=snames;
     document.getElementById("rno").innerHTML=roll;
     document.getElementById("class").innerHTML=clas;
-    document.getElementById("java").innerHTML=javaM+"/100";
-    document.getElementById("c").innerHTML=cM+"/100";
-    document.getElementById("cpl").innerHTML=cplM+"/100";
-    document.getElementById("python").innerHTML=pythonM+"/100";
-    document.getElementById("php").innerHTML=phpM+"/100";
-    document.getElementById("total1").innerHTML=total+"/500";
     document.getElementById("per").innerHTML=percentage;
+
+
+    if (percentage<=35) {
+        
+        document.getElementById("java").innerHTML=javaM+"/100"+"f";
+    } else {
+        document.getElementById("java").innerHTML=javaM+"/100";
+    }
+    if (percentage<=35) {
+
+        document.getElementById("c").innerHTML=cM+"/100"+"F";
+    } else {
+        
+        document.getElementById("c").innerHTML=cM+"/100";
+    }
+    if (percentage<=35) {
+        
+        document.getElementById("cpl").innerHTML=cplM+"/100"+"F";
+    } else {
+        
+        document.getElementById("cpl").innerHTML=cplM+"/100";
+    }
+    if (percentage<=35) {
+        
+        document.getElementById("python").innerHTML=pythonM+"/100"+"F";
+    } else {
+        
+        document.getElementById("python").innerHTML=pythonM+"/100";
+    }
+    if (percentage<=35) {
+        document.getElementById("php").innerHTML=phpM+"/100"+"F";
+
+    } else {
+        
+        document.getElementById("php").innerHTML=phpM+"/100";
+    }
+    if (percentage<=35) {
+        document.getElementById("total1").innerHTML=total+"/500"+"F";
+    } else {
+        
+        document.getElementById("total1").innerHTML=total+"/500";
+    }
 
 
 
